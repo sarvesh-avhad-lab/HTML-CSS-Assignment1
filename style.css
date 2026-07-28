@@ -95,3 +95,211 @@ body {
 .btn-primary:hover {
     background-color: #bd2d2d;
 }
+
+
+
+/* Second section CSS */
+
+.class-hero {
+    padding: 40px 20px;
+}
+
+.class-hero-container {
+    background-color: #ffffff;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.class-info-top {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+
+
+.class-titles {
+    max-width: 600px;
+}
+
+.class-titles h1 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 25px;
+    line-height: 1.2;
+}
+
+.class-tags {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.tag {
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.tag-instructor {
+    border: 1px solid #1a8a7a;
+    color: #333;
+    background-color: #fff;
+}
+
+.tag-genre {
+    background-color: #fcebeb;
+    color: #b04343;
+}
+
+.tag-level {
+    background-color: #b8b8b8;
+    color: #ffffff;
+}
+
+.tag img {
+    width: 16px;
+    height: 16px;
+}
+
+
+.icon-teal {
+    filter: invert(41%) sepia(19%) saturate(1915%) hue-rotate(124deg) brightness(93%) contrast(87%);
+}
+
+
+.class-pricing {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.pricing-card {
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    width: 260px;
+    overflow: hidden; 
+}
+
+.prices {
+    display: flex;
+    background-color: #ffffff;
+}
+
+.price-tier {
+    flex: 1;
+    text-align: center;
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.price-tier:first-child {
+    border-right: 1px solid #cccccc;
+}
+
+.amount {
+    font-size: 22px;
+    font-weight: bold;
+    color: #333;
+}
+
+.tier-name {
+    font-size: 12px;
+    color: #666;
+    margin-top: 4px;
+}
+
+.btn-signup {
+    display: block;
+    background-color: #d83939; 
+    color: #ffffff;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.2s ease;
+}
+
+.btn-signup:hover {
+    background-color: #bd2d2d;
+}
+
+.btn-reduced {
+    display: block;
+    text-align: center;
+    border: 1px solid #999;
+    color: #333;
+    padding: 10px;
+    margin-top: 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    width: 238px; 
+}
+
+
+.hero-divider {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 40px 0 30px 0;
+}
+
+.class-logistics {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.logistics-item {
+    display: flex;
+    gap: 15px;
+    flex: 1;
+    padding: 0 25px;
+}
+
+.logistics-item:first-child {
+    padding-left: 0;
+}
+
+
+.border-left {
+    border-left: 1px solid #e0e0e0;
+}
+
+
+.icon-red {
+    width: 20px;
+    height: 20px;
+    filter: invert(33%) sepia(61%) saturate(1512%) hue-rotate(334deg) brightness(91%) contrast(94%);
+}
+
+.logistics-text p {
+    margin: 0 0 4px 0;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.logistics-text .primary-text {
+    color: #333;
+}
+
+.logistics-text .secondary-text {
+    color: #666;
+}
+
+.highlight-red {
+    color: #d83939;
+}
+
+
+
