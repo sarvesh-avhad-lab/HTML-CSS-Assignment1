@@ -303,3 +303,143 @@ body {
 
 
 
+/* Third section */
+
+
+.class-description-section {
+    padding: 0 20px 40px 20px; 
+}
+
+.description-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    background-color: #ffffff;
+}
+
+
+.description-content {
+    flex: 65%; 
+    padding: 0 40px 40px 40px; 
+    color: #444;
+}
+
+.description-content p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+.share-block {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 35px;
+}
+
+.share-text {
+    font-size: 13px;
+    font-weight: 600;
+    color: #555;
+    margin-right: 8px;
+}
+
+.share-block a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+    background-color: #999;
+    border-radius: 50%; 
+    transition: background-color 0.2s ease;
+}
+
+.share-block a img {
+    width: 14px;
+    height: 14px;
+    filter: brightness(0) invert(1); 
+}
+
+
+.section-divider {
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    margin: 35px 0;
+}
+
+
+.class-schedule h3 {
+    font-size: 18px;
+    color: #222;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.schedule-row {
+    display: flex;
+    margin-bottom: 15px;
+    font-size: 13px;
+    color: #444;
+}
+
+.schedule-label {
+    font-weight: 600;
+    width: 60px; 
+}
+
+.date-list {
+    display: flex;
+    gap: 25px;
+}
+
+.date-item {
+    text-align: center;
+    line-height: 1.5;
+}
+
+
+.instructor-sidebar {
+    flex: 35%; 
+    background-color: #fbf2e9; 
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+}
+
+.instructor-img {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%; 
+    object-fit: cover;
+    margin-bottom: 25px;
+}
+
+.instructor-bio {
+    font-size: 13px;
+    line-height: 1.7;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.instructor-name {
+    color: #1a8a7a; 
+    font-weight: 600;
+}
+
+.btn-reviews {
+    display: inline-block;
+    padding: 8px 24px;
+    border: 1px solid #d83939; 
+    color: #d83939;
+    text-decoration: none;
+    border-radius: 20px; 
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    background-color: #ffffff;
+}
