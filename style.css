@@ -498,3 +498,56 @@ body {
     font-size: 16px;
     font-weight: 500;
 }
+
+#line{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+
+
+
+
+/* policy */
+
+.policy{
+    max-width:1130px;
+    margin:80px auto;
+    padding-left: 5%;
+}
+
+.policy h1{
+    font-size:48px;
+    margin-bottom:10px;
+}
+
+.policy-intro{
+    max-width:900px;
+    margin-bottom:30px;
+    line-height:1.8;
+}
+
+/* Main Row */
+
+.policy-container{
+    display:flex;
+    justify-content:space-between;
+    gap:40px;
+}
+
+/* Each Block */
+
+.policy-item{
+    flex:1;
+}
+
+.policy-item h2{
+    color:#e53935;
+    font-size:24px;
+    margin-bottom:15px;
+}
+
+.policy-item p{
+    line-height:1.8;
+    color:#555;
+}
