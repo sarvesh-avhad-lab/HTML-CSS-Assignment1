@@ -471,3 +471,30 @@ body {
     width: 85%;
     max-width: 800px;
 }
+
+.about-class h1 {
+    font-size: 32px;
+    font-weight: 800;
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 25px;
+    line-height: 1.2;
+    padding-left: 5%;
+}
+.about-class p{
+    padding-left: 5%;
+}
+
+.links{
+    display: flex;
+    gap: 40px;          /* Space between the links */
+    align-items: center;
+    padding-left: 5%;
+}
+
+.links a{
+    text-decoration: none;
+    color: #DC3636;
+    font-size: 16px;
+    font-weight: 500;
+}
