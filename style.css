@@ -77,9 +77,6 @@ body {
     transition: color 0.2s ease;
 }
 
-.main-menu a:hover {
-    color: #d83939;
-}
 
 .btn-primary {
     background-color: #d83939; 
@@ -90,10 +87,6 @@ body {
     font-weight: 600;
     font-size: 15px;
     transition: background-color 0.2s ease;
-}
-
-.btn-primary:hover {
-    background-color: #bd2d2d;
 }
 
 
@@ -227,10 +220,6 @@ body {
     text-decoration: none;
     font-weight: 600;
     transition: background-color 0.2s ease;
-}
-
-.btn-signup:hover {
-    background-color: #bd2d2d;
 }
 
 .btn-reduced {
@@ -594,10 +583,6 @@ body {
 
 .footer-nav a:first-child {
     margin-left: 0;
-}
-
-.footer-nav a:hover {
-    opacity: 0.7;
 }
 
 .footer-contact h3 {
