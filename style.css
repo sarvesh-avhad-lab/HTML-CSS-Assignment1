@@ -673,9 +673,6 @@ body {
     transition: background-color 0.2s;
 }
 
-.newsletter-form button:hover {
-    background-color: #d17b38;
-}
 
 .social-links {
     display: flex;
@@ -707,9 +704,6 @@ body {
     border-color: #e58d4a;
 }
 
-.social-icon:hover {
-    opacity: 0.8;
-}
 
 .footer-bottom-row {
     display: flex;
@@ -729,6 +723,3 @@ body {
     text-decoration: underline;
 }
 
-.privacy-link:hover {
-    text-decoration: none;
-}
