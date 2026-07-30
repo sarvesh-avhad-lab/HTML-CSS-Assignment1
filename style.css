@@ -872,3 +872,130 @@ body {
     margin-right: auto;
     box-sizing: border-box;
 }
+
+
+
+/* Media  queries for the tablet and mobile */
+
+@media (max-width: 900px) {
+    /* 1.inner containers  */
+    .header-container,
+    .class-hero-container,
+    .description-container,
+    .quote,
+    .similar-classes-container,
+    .about-class,
+    .policy,
+    .footer-container {
+        width: 90%; 
+    }
+
+    /* 2. Header Adjustments */
+    .header-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .nav-wrapper {
+        align-items: center;
+    }
+    .bottom-navigation {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .main-menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    /* 3. Hero Section */
+    .class-info-top {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .class-pricing {
+        align-items: flex-start; 
+    }
+    .class-tags {
+        flex-wrap: wrap; 
+    }
+    
+    /* 4. Dates, Location, Deadline  */
+    .class-logistics {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .logistics-item {
+        padding-left: 0;
+    }
+    .logistics-item.border-left {
+        border-left: none; 
+        border-top: 1px solid #e0e0e0; 
+        padding-top: 20px;
+    }
+
+    .description-container {
+        flex-direction: column;
+    }
+    .description-content {
+        padding: 0 0 40px 0 !important; 
+    }
+    .instructor-sidebar {
+        padding: 30px 20px;
+    }
+
+    /* 6.  (Similar Classes & Policy)  */
+    .classes-grid,
+    .policy-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    /* 7. Footer Stacking */
+    .footer-top-row {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .footer-left {
+        max-width: 100%;
+    }
+    .footer-nav {
+        line-height: 2; 
+    }
+    .footer-right {
+        align-items: flex-start;
+    }
+    .social-links {
+        justify-content: flex-start;
+    }
+    .footer-bottom-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pricing-card {
+        width: 100%; 
+    }
+    
+    .newsletter-form {
+        flex-direction: column;
+        background: transparent;
+        border-radius: 0;
+        padding: 0;
+        width: 100%;
+    }
+    .newsletter-form input {
+        width: 100%;
+        border-radius: 25px;
+        margin-bottom: 10px;
+        background-color: #ffffff;
+        box-sizing: border-box;
+    }
+    .newsletter-form button {
+        width: 100%;
+        border-radius: 25px;
+    }
+}
