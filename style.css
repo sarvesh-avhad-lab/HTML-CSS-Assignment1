@@ -7,7 +7,7 @@ body {
 
 /* Similar classes */
 .grey-bg-wrapper {
-    background-color: #ECECEC; /* Applies the Figma grey color */
+    background-color: #ECECEC;
     padding-bottom: 20px; 
 }
 
@@ -18,7 +18,7 @@ body {
 }
 
 .class-card {
-    flex: 1; /* Makes all 3 columns equal width */
+    flex: 1; 
 }
 
 .class-card p {
@@ -31,7 +31,7 @@ body {
 
 .class-card .learn-more {
     text-decoration: none;
-    color: #d83939; /* Red color matching your primary buttons */
+    color: #d83939; 
     font-size: 14px;
     font-weight: 600;
 }
@@ -57,7 +57,7 @@ body {
 .similar-classes-container {
     max-width: 1000px;
     margin: 0 auto;
-    background-color: #ffffff; /* White card background */
+    background-color: #ffffff; 
     padding: 40px;
 }
 
@@ -839,4 +839,36 @@ body {
     color: #555;
     font-size: 14px;
     margin: 0;
+}
+
+
+
+/* Fixing the sixes and block */
+
+.site-header,
+.site-footer {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.grey-bg-wrapper {
+    width: 100%;
+    background-color: #ECECEC;
+    padding: 40px 0; 
+    box-sizing: border-box;
+}
+
+.header-container,
+.class-hero-container,
+.description-container,
+.quote,
+.similar-classes-container,
+.about-class,
+.policy,
+.footer-container {
+    width: 80%;
+    max-width: 1125px; 
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
 }
