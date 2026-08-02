@@ -1091,4 +1091,223 @@ body {
         flex-direction:column;
         gap:15px;
     }
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .class-hero-container,
+    .description-container,
+    .similar-classes-container,
+    .footer-container,
+    .about-class,
+    .policy,
+    .class-description-section{
+        width:100%;
+        max-width:100%;
+        padding:0 8px;
+        margin:0;
+    }
+}
+
+
+/* new mobile fixes */
+
+@media (max-width:480px){
+
+    *{
+        box-sizing:border-box;
+    }
+
+    body{
+        overflow-x:hidden;
+    }
+
+    .grey-bg-wrapper,
+    .class-hero,
+    .class-description-section,
+    .similar-classes,
+    .about-class,
+    .policy,
+    .site-footer{
+        padding-left:0 !important;
+        padding-right:0 !important;
+        margin:0 !important;
+    }
+
+    .header-container,
+    .class-hero-container,
+    .description-container,
+    .quote,
+    .similar-classes-container,
+    .about-class,
+    .policy,
+    .footer-container{
+
+        width:100% !important;
+        max-width:100% !important;
+
+        margin:0 !important;
+
+        padding:15px !important;
+    }
+
+
+    .class-info-top{
+        display:flex;
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .class-titles{
+        width:100%;
+        max-width:100%;
+    }
+
+    .class-titles h1{
+        width:100%;
+        font-size:28px;
+        line-height:1.2;
+    }
+
+
+    .class-pricing{
+
+        width:100%;
+        align-items:stretch;
+    }
+
+    .pricing-card{
+
+        width:100%;
+    }
+
+    .prices{
+
+        display:flex;
+        width:100%;
+    }
+
+    .price-tier{
+
+        flex:1;
+    }
+
+    .btn-signup{
+
+        width:100%;
+    }
+
+    .btn-reduced{
+
+        width:100%;
+    }
+
+
+    .class-logistics{
+
+        width:100%;
+    }
+
+    .logistics-item{
+
+        width:100%;
+        padding:15px 0;
+    }
+
+
+    .description-container{
+
+        display:block;
+    }
+
+    .description-content{
+
+        width:100%;
+        padding:20px 15px !important;
+    }
+
+    .instructor-sidebar{
+
+        width:100%;
+        padding:30px 20px;
+    }
+
+
+    .quote{
+
+        width:100%;
+    }
+
+    .quote img:first-child{
+
+        width:100%;
+    }
+
+    #quote{
+
+        width:90%;
+    }
+    
+
+    .classes-grid{
+
+        display:flex;
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .class-card{
+
+        width:100%;
+    }
+
+
+
+    .links{
+
+        flex-direction:column;
+        align-items:flex-start;
+        gap:15px;
+    }
+
+
+
+    .policy-container{
+
+        display:flex;
+        flex-direction:column;
+        gap:25px;
+    }
+
+
+
+    .footer-top-row{
+
+        display:flex;
+        flex-direction:column;
+    }
+
+    .footer-left,
+    .footer-right{
+
+        width:100%;
+        max-width:100%;
+    }
+
+    .newsletter-form{
+
+        width:100%;
+    }
+
+    .newsletter-form input{
+
+        width:100%;
+    }
+
+    .social-links{
+
+        justify-content:flex-start;
+    }
+
 }
