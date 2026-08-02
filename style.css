@@ -966,11 +966,12 @@ body {
     .description-container {
         flex-direction: column;
     }
+    
     .description-content {
-        padding: 0 0 40px 0 !important; 
+        padding: 30px 35px 40px 35px !important;
     }
     .instructor-sidebar {
-        padding: 30px 20px;
+        padding: 35px 30px;
     }
 
     /* 6.  (Similar Classes & Policy)  */
