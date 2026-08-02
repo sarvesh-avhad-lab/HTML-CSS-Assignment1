@@ -875,6 +875,35 @@ body {
 
 
 
+/* hamburger */
+
+#menu-toggle{
+    display:none;
+}
+
+.hamburger{
+    display:none;
+}
+
+.header-container{
+
+    position:relative;
+}
+
+.close-btn{
+
+    position:absolute;
+
+    top:18px;
+    right:20px;
+
+    font-size:32px;
+
+    cursor:pointer;
+
+    color:#333;
+}
+
 /* Media  queries for the tablet and mobile */
 
 @media (max-width: 900px) {
@@ -975,27 +1004,91 @@ body {
     }
 }
 
-@media (max-width: 480px) {
-    .pricing-card {
-        width: 100%; 
+@media(max-width:480px){
+
+    .hamburger{
+
+        display:block;
+
+        position:absolute;
+        top:25px;
+        right:20px;
+
+        font-size:32px;
+
+        cursor:pointer;
+
+        z-index:1001;
     }
-    
-    .newsletter-form {
-        flex-direction: column;
-        background: transparent;
-        border-radius: 0;
-        padding: 0;
-        width: 100%;
+
+    .header-container{
+
+        justify-content:space-between;
+        align-items:center;
     }
-    .newsletter-form input {
-        width: 100%;
-        border-radius: 25px;
-        margin-bottom: 10px;
-        background-color: #ffffff;
-        box-sizing: border-box;
+
+    .nav-wrapper{
+
+        display:flex;
+
+        flex-direction:column;
+
+        position:fixed;
+
+        top:0;
+        left:-300px;
+
+        width:270px;
+
+        height:100vh;
+
+        background:#fff;
+
+        padding:70px 25px 25px;
+
+        box-shadow:3px 0 10px rgba(0,0,0,.2);
+
+        transition:.35s ease;
+
+        z-index:1000;
     }
-    .newsletter-form button {
-        width: 100%;
-        border-radius: 25px;
+
+    #menu-toggle:checked ~ .nav-wrapper{
+
+        left:0;
+    }
+
+    .top-utilities{
+
+        display:flex;
+        flex-direction:column;
+        align-items:flex-start;
+
+        gap:20px;
+    }
+
+    .bottom-navigation{
+
+        display:flex;
+        flex-direction:column;
+        align-items:flex-start;
+
+        gap:25px;
+
+        margin-top:35px;
+    }
+
+    .main-menu{
+
+        display:flex;
+        flex-direction:column;
+
+        gap:18px;
+    }
+
+    .main-menu{
+
+        flex-direction:column;
+        gap:15px;
     }
 }
