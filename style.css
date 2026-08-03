@@ -492,29 +492,58 @@ body {
 
 
 /* Fixing the Quote images */
-.quote {
-    position: relative;
-    width: 100%;
-    max-width: 1000px; 
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.quote{
+    width:100%;
+    max-width:1125px;
+    margin:40px auto;
+    padding:40px 30px;
+
+    background-image:url("./images/QuoteBg.png");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+
+    box-sizing:border-box;
 }
 
-.quote img:first-child {
-    width: 100%;
-    height: auto;
-    display: block;
+.quote-content{
+    position:relative;
+    max-width:700px;
+    margin:0 auto;
+    text-align:center;
 }
 
-#quote {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 85%;
-    max-width: 800px;
+.quote-text{
+    margin:0;
+    font-size:16px;
+    line-height:1.7;
+    color:#555;
+    font-style:italic;
+}
+
+.quote-author{
+    margin-top:10px;
+    font-size:14px;
+    color:#666;
+    font-weight:600;
+}
+
+.quote-mark{
+    position:absolute;
+    color:#17a7b8;
+    font-size:34px;
+    font-weight:bold;
+}
+
+.quote-mark.left{
+    left:-25px;
+    top:-5px;
+}
+
+.quote-mark.right{
+    right:-25px;
+    bottom:-5px;
 }
 
 .about-class h1 {
@@ -1235,20 +1264,40 @@ body {
     }
 
 
-    .quote{
+.quote{
+    width:100%;
+    margin:20px 0;
+    padding:55px 18px;
+    background-size:cover;
+}
 
-        width:100%;
-    }
+.quote-content{
+    max-width:100%;
+}
 
-    .quote img:first-child{
+.quote-text{
+    font-size:14px;
+    line-height:1.8;
+}
 
-        width:100%;
-    }
+.quote-author{
+    font-size:13px;
+    margin-top:12px;
+}
 
-    #quote{
+.quote-mark{
+    font-size:28px;
+}
 
-        width:90%;
-    }
+.quote-mark.left{
+    left:0;
+    top:-10px;
+}
+
+.quote-mark.right{
+    right:0;
+    bottom:-10px;
+}
     
 
     .classes-grid{
