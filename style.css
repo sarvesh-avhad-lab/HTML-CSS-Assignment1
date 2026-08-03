@@ -1438,8 +1438,15 @@ body {
 
 .about-class{
     background:#fff;
-    margin:0;
-    padding:60px 20px;
+
+    width:80%;
+    max-width:1125px;
+
+    margin:0 auto;
+
+    padding:60px 40px;
+
+    box-sizing:border-box;
 }
 
 
