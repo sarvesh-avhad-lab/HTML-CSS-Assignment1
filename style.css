@@ -921,15 +921,14 @@ body {
 
 .close-btn{
 
-    position:absolute;
+    display: none;
 
+    position:absolute;
     top:18px;
     right:20px;
 
     font-size:32px;
-
     cursor:pointer;
-
     color:#333;
 }
 
@@ -1124,6 +1123,10 @@ body {
 
     body{
         overflow-x: hidden;
+    }
+
+    .close-btn{
+        display: block; 
     }
 
     .class-hero-container,
