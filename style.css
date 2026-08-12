@@ -1560,3 +1560,99 @@ body {
         padding:40px 15px;
     }
 }
+
+/* =========================================
+   DESKTOP - FIGMA SPACING FIX
+   ========================================= */
+
+/* Grey area containing description + quote + similar classes */
+.grey-bg-wrapper {
+    background-color: #ECECEC;
+    padding: 0;
+}
+
+/* Remove the unwanted gap before the quote */
+.class-description-section {
+    background-color: #ECECEC;
+    padding: 0 20px;
+}
+
+/* Quote should directly touch the class schedule section */
+.quote {
+    width: 100%;
+    max-width: 1125px;
+    margin: 0 auto;
+    padding: 65px 35px;
+    box-sizing: border-box;
+
+    background: url("./images/quotebg.png") center center / cover no-repeat;
+}
+
+/* =========================================
+   SIMILAR CLASSES
+   ========================================= */
+
+/* The SECTION is transparent.
+   The grey background comes from grey-bg-wrapper. */
+.similar-classes {
+    background-color: transparent;
+    margin: 0;
+    padding: 15px 0 20px;
+}
+
+/* This is the WHITE rectangle visible in Figma */
+.similar-classes-container {
+    width: 1127px;
+    max-width: calc(100% - 40px);
+    min-height: 262px;
+
+    margin: 0 auto;
+
+    background-color: #FFFFFF;
+
+    padding: 25px 20px;
+    box-sizing: border-box;
+}
+
+/* Heading */
+.similar-classes-container h3 {
+    margin: 0 0 22px 0;
+
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 1.2;
+    color: #434343;
+}
+
+/* Three columns */
+.classes-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.class-card {
+    flex: 1;
+}
+
+.class-card p {
+    margin: 0 0 10px 0;
+
+    font-family: "PT Sans", sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555;
+}
+
+.class-card .learn-more {
+    font-family: "PT Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #d83939;
+    text-decoration: none;
+}
+
+.class-card .learn-more:hover {
+    text-decoration: underline;
+}
