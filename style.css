@@ -1588,12 +1588,7 @@ body {
     background: url("./images/quotebg.png") center center / cover no-repeat;
 }
 
-/* =========================================
-   SIMILAR CLASSES
-   ========================================= */
 
-/* The SECTION is transparent.
-   The grey background comes from grey-bg-wrapper. */
 .similar-classes {
     background-color: transparent;
     margin: 0;
@@ -1655,4 +1650,107 @@ body {
 
 .class-card .learn-more:hover {
     text-decoration: underline;
+}
+
+
+
+
+
+/* TABLET */
+@media (max-width: 900px) {
+
+    .class-description-section {
+        padding: 0 20px;
+    }
+
+    .quote {
+        width: 90%;
+        max-width: 1125px;
+        margin: 0 auto;
+        padding: 55px 25px;
+    }
+
+    .similar-classes {
+        padding: 15px 0 20px;
+        background: transparent;
+    }
+
+    .similar-classes-container {
+        width: 90%;
+        max-width: 1125px;
+        min-height: auto;
+        padding: 30px;
+    }
+
+    .classes-grid {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .class-card {
+        width: 100%;
+    }
+}
+
+
+/* MOBILE */
+@media (max-width: 480px) {
+
+    .class-description-section {
+        background: #ECECEC;
+        padding: 0;
+    }
+
+    .quote {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        padding: 40px 12px;
+    }
+
+    .quote-content {
+        width: 100%;
+        max-width: 100%;
+        padding: 25px 18px;
+        border-radius: 14px;
+    }
+
+    .similar-classes {
+        background: transparent;
+        padding: 15px 0 20px;
+        margin: 0;
+    }
+
+    .similar-classes-container {
+        width: calc(100% - 30px);
+        max-width: none;
+        min-height: auto;
+        margin: 0 auto;
+        padding: 25px 18px;
+        box-sizing: border-box;
+    }
+
+    .similar-classes-container h3 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .classes-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .class-card {
+        width: 100%;
+    }
+
+    .class-card p {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .class-card .learn-more {
+        font-size: 14px;
+    }
 }
