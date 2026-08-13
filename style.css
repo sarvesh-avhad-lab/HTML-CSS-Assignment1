@@ -2,16 +2,19 @@
     /* Colors */
     --color-white: #FFFFFF;
     --color-black: #434343;     
+    --color-hairline: rgba(67, 67, 67, 0.5);
     --color-red: #DC3636;       
     --color-yellow: #F39B4E;     
-    --color-teal: #00ACB4;      
+    --color-teal: #00ACB4;       
     --color-neutral-50: #787579;
     --color-divider: #828282;
     --color-bg-grey: #ECECEC;
 
+    
     --font-body: "PT Sans", sans-serif;
     --font-heading: "Montserrat", sans-serif;
 
+    
     --fs-body-md: 16px; --lh-body-md: 26px; --ls-body-md: 0.32px;
     
     --fs-body-lg: 18px; --lh-body-lg: 28px; --ls-body-lg: 0.36px;
@@ -19,12 +22,12 @@
     --fs-label-md: 18px; --lh-label-md: 27px; --ls-label-md: 0.36px;
     
     --fs-label-lg: 21px; --lh-label-lg: 28px; --ls-label-lg: 0.42px;
-
+    
     --fs-title-xs: 24px; --lh-title-xs: 36px; --ls-title-xs: 0.48px;
-
+    
     --fs-title-md: 36px; --lh-title-md: 47px; --ls-title-md: 0.72px;
 
-
+    
     --content-max: 1127px;
 }
 
@@ -36,7 +39,7 @@ body {
     color: var(--color-black);
 }
 
-/* HEADER  */
+/*  HEADER */
 .site-header {
     background-color: var(--color-white);
     width: 100%;
@@ -136,7 +139,7 @@ body {
     transition: background-color 0.2s ease;
 }
 
-/* GREY WRAPPER   */
+/* GREY WRAPPER (hero + description/quote + similar classes) */
 .grey-bg-wrapper {
     width: 100%;
     background-color: var(--color-bg-grey);
@@ -144,7 +147,7 @@ body {
     box-sizing: border-box;
 }
 
-/* CLASS HERO */
+/* CLASS HERO  */
 .class-hero {
     padding: 0 20px;
 }
@@ -200,10 +203,11 @@ body {
 }
 
 .tag-instructor {
-    border: 0.5px solid var(--color-black);
+    border: 1px solid var(--color-hairline);
     background-color: var(--color-white);
     padding: 5px 16px;
 }
+
 
 .tag-genre {
     background-color: #F8D7D7;
@@ -221,15 +225,11 @@ body {
     height: 24px;
 }
 
+
 .icon-teal {
     width: 24px;
     height: 24px;
-    background-color: var(--color-teal);
-    -webkit-mask: url("./images/profile.svg") center / contain no-repeat;
-    mask: url("./images/profile.svg") center / contain no-repeat;
-}
-.icon-teal[src] {
-    filter: none;
+    filter: invert(41%) sepia(90%) saturate(1700%) hue-rotate(152deg) brightness(98%) contrast(101%);
 }
 
 .class-pricing {
@@ -239,7 +239,6 @@ body {
 }
 
 .pricing-card {
-    border: 0.5px solid var(--color-black);
     border-radius: 8px;
     width: 264px;
     overflow: hidden;
@@ -248,6 +247,8 @@ body {
 .prices {
     display: flex;
     background-color: var(--color-white);
+    border: 1px solid var(--color-hairline);
+    border-bottom: none;
 }
 
 .price-tier {
@@ -259,7 +260,7 @@ body {
 }
 
 .price-tier:first-child {
-    border-right: 0.5px solid var(--color-black);
+    border-right: 1px solid var(--color-hairline);
 }
 
 .amount {
@@ -295,7 +296,7 @@ body {
 .btn-reduced {
     display: inline-block;
     text-align: center;
-    border: 0.5px solid var(--color-black);
+    border: 1px solid var(--color-black);
     color: var(--color-black);
     padding: 8px 24px;
     margin-top: 29px;
@@ -308,6 +309,7 @@ body {
     letter-spacing: var(--ls-label-md);
     white-space: nowrap;
 }
+
 
 .class-logistics {
     display: flex;
@@ -537,7 +539,6 @@ body {
     border-radius: 16px;
     position: relative;
     text-align: center;
-    /* Figma: M3/Elevation Light/3 */
     box-shadow: 0 1px 3px rgba(0,0,0,0.3), 0 4px 8px 3px rgba(0,0,0,0.15);
     box-sizing: border-box;
 }
@@ -710,7 +711,7 @@ body {
     margin: 0;
 }
 
-/* FOOTER */
+/* FOOTER*/
 .site-footer {
     background-color: #484848;
     color: var(--color-white);
@@ -808,32 +809,36 @@ body {
     align-items: center;
     background-color: var(--color-white);
     border-radius: 30px;
-    padding: 4px;
-    width: 320px;
+    padding: 3px;
+    width: 348px;
+    box-sizing: border-box;
 }
 
 .newsletter-form input {
     flex: 1;
     border: none;
     outline: none;
-    padding: 10px 15px;
+    padding: 10px 0 10px 16px;
     border-radius: 30px 0 0 30px;
     font-family: var(--font-body);
     font-size: var(--fs-body-md);
     background: transparent;
+    min-width: 0;
 }
 
 .newsletter-form button {
     background-color: var(--color-yellow);
     color: var(--color-white);
     border: none;
-    padding: 8px 24px;
+    padding: 10px 18px;
     border-radius: 28px;
     font-family: var(--font-body);
     font-weight: 700;
     font-size: var(--fs-label-lg);
     cursor: pointer;
     transition: background-color 0.2s;
+    white-space: nowrap;
+    flex-shrink: 0;
 }
 
 .social-links {
